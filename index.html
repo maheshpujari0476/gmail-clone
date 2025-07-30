@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <!--linking css to html file-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+
+
+    <!-- linking the goole fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <!-- nav bar -->
+    <div id="nav_bar">
+        <div id="space1_beside_menu"> </div>        
+
+        <div id="menu">
+        <svg focusable="false" viewBox="0 0 24 24" id="menu_icon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+        </div>
+
+        <div id="space2_beside_menu"> </div>  
+                 
+            <!--gmail.png-->
+        <div id="png">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png"  id="img_png">
+        </div>  
+
+            <!-- <gap -->
+        <div id="space_beside_png"></div>
+
+           <!-- input main box -->
+
+        <div id="inputmain_box">
+
+            <div id="spacesearch_icon"></div>
+            <!-- search icon -->
+            <div id="searchicon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"fill="rgb(69,71,70)" id="question_mark"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            </div>
+            <input type="text" placeholder="Search mail" id="input_nav">
+
+            <div id="moreoptionicon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"fill="rgb(69,71,70)" id="option"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"></path></svg></div>
+            
+            <!--  creating page ..conent for more option -->
+            <div id="content_of_more_option">
+
+
+                <div id="from">
+                    <div id="divform">Form</div>
+                    <div id="spacefo"></div>
+                    <input type="text" id="inputform">
+                 </div>
+         
+                 <!-- coding to to (word) in the form -->
+         
+                 <div id="to">
+                    <div id="divto">To</div>
+                    <div id="spaceto"></div>
+                    <input type="text" id="inputform">
+         
+                </div>
+         
+                 <!-- coding to to (subject) in the form -->
+                 <div id="subject">
+                     <div id="divsubject">subject</div>
+                     <div id="spacesubject"></div>
+                     <input type="text" id="inputform">
+          
+                 </div>
+         
+         
+                 <!-- coding [to has the word] (given name:) in the form -->
+                 <div id="Has_the_words">
+                     <div id="div_has_the_words">Has the words</div>
+                     <div id="space_has_the_words"></div>
+                     <input type="text" id="inputform">
+          
+                 </div>
+          
+                 <!-- coding [does not have] (given name:) in the form -->
+                 <div id="Does_not_have">
+                     <div id="div_Does_not_have">Doesn't have</div>
+                     <div id="space_Does_not_have"></div>
+                     <input type="text" id="inputform">
+          
+                 </div>
+         
+                 <!-- coding [size] (given name:) in the form -->
+                  <div id="size">
+                     <div id="div_size">size</div>
+                     <div id="space_size1"></div>
+         
+                     <div id="space_input_and_icon1">
+                     <input type="text" id="inputsize1">
+
+                    <!-- the greater and lesser box in the form -->
+                     <div id="greater_lesser">
+                        <div id="greater">greater than</div>
+                        <div id="lesser">lesser than</div>
+                     </div>
+                     <!-- end of the greater thaan leasser than -->
+                    <div id="icon_moreoption_size1"><i class="ri-arrow-down-s-fill"></i></div>
+                </div>
+         
+                     <div id="space_input_and_icon2_size">
+                       <div id="space_size2"></div>
+                       <input type="text" id="inputsize_second">
+                     </div>
+         
+                      <div id="space_size4"></div>
+         
+                  <div id="space_input_and_icon3_size">
+                     <input type="text" id="inputsize_three">
+
+                     <!-- bytes kb ,mb box in the form -->
+                     <div id="bytes_Kb_Mb">
+                        <div id="MB">MB</div>
+                        <div id="KB">KB</div>
+                        <div id="BYTES">BYTES</div>
+                     </div>
+                     <!-- end of the mb,bytes,kb -->
+
+                     <div id="icon_moreoption_size_two"><i class="ri-arrow-down-s-fill"></i></div>
+                    </div>
+
+         
+                 </div>
+
+
+          
+         
+                <!-- coding [date_within] (given name:) in the form -->
+                 <div id="date_within">
+                     <div id="div_datewithin">Date within</div>
+                     <div id="space_datewithin"></div>
+         
+
+                     <!-- date input section with the icon -->
+                    <div id="date_inp_main">
+                    <input type="text" id="input_date_within1">
+
+                    <!-- dates months and the week in another box when we click it will visible -->
+                     <div id="days_weeks_months">
+                        <div id="day_1"> 1 day</div>
+                        <div id="day_3"> 3 days</div>
+                        <div id="week_1">1 week</div>
+                        <div id="week_2"> 2 weeks</div>
+                        <!-- <div id="day_1"></div> -->
+                        <div id="month_1">1 month</div>
+                        <div id="month_2">2 month</div>
+                        <div id="month_6">6 month</div>
+                        <div id="year_1">1 year</div>
+                     </div>
+                     
+
+                     <!-- end pof the date weeks and month box -->
+                    <div id="icon_moreoption_size_three"><i class="ri-arrow-down-s-fill"></i></div>
+                    </div>
+
+         
+         
+                     <div id="space_datewithin2"></div>
+                     <input type="datetime-local" id="input_date_within_two">
+                 </div>
+         
+                 <!-- coding [Search] (given name:) in the form -->
+                  <!-- coding to to (subject) in the form -->
+                 <div id="search">
+                     <div id="divsubject">Search</div>
+                      <div id="spacesubject"></div>
+                         <div id="div_for_input_search_box">
+                            <div id="mail_another_div">
+
+                                <!-- first div in the mail -->
+                            <div id="main_of_all_main_d_c_s">
+                                <div id="all_mail">All Mail</div>
+                                <div id="inb_in_mail">Inbox</div>
+                                <div id="starred_in_mail">Starred</div>
+                                <div id="sent_mail">Sent Mail</div>
+                                <div id="Drafts">Draft</div>
+                                <div id="chats">Chats</div>
+                                <div id="spam">Spam</div>
+                                <div id="Trash">Trash</div>
+                            </div>
+                            <!-- finish of the first div -->
+                            <hr>
+
+
+                            <!-- mailspam trsh -->
+                             <div id="mail_s_t">
+                                <div id="mail_spam">Mail  & Spam & Trash</div>
+                             </div>
+                             <hr>
+                             <!-- finish of mail trsh -->
+
+                              <!-- read and the unread -->
+                                <div id="read_unread">
+                                    <div id="read">Read Mail</div>
+                                    <div id="unread">Unread Mail</div>
+                                </div>
+                                <hr>
+                                <!-- finish of the read unread -->
+
+                                <!-- social updates forms promotion -->
+
+                                <div id="social_update_f_p">
+                                    <div id="social_ml">Social</div>
+                                    <div id="update_ml">Updates</div>
+                                    <div id="forums_ml">Forms</div>
+                                    <div id="promotion_ml">Promotions</div>
+                                    
+                                </div>
+
+
+
+                            </div>
+
+                            <input type="text" id="input_search">
+                            <!-- <div id="mail_anoter_div"></div> -->
+                             <div id="icon_moreoption_size_four"><i class="ri-arrow-down-s-fill"></i></div>
+        <div class="pt-6 ...">pt-6</div>
+<div class="pr-4 ...">pr-4</div>
+<div class="pb-8 ...">pb-8</div>
+<div class="pl-2 ...">pl-2</div>                 </div>
+                 </div>
+                 <!-- end of teh search -->
+         
+         
+         
+         
+                 <!-- checkbox -->
+                 <div id="check_box_search_option">
+                     
+                     <div id="circle_word_attachment">
+                       <div id="circle">
+                       <input type="checkbox" name="" id="checkbox_one_search">
+                       </div>
+                       <div id="checkbox_space_one"></div>
+                       <div id="attachment">Has attachment</div>
+                     </div>
+         
+         
+                     <div id="checkbox_space2"></div>
+         
+                     <div id="circle_include_chats">
+                     <div id="circle">
+                     <input type="checkbox" name="" id="checkbox2_search">
+                    </div>
+                     <div id="checkbox_space_three"></div>
+                     <div id="dont_includes_chats">Don't includes chats</div>
+                     </div>
+         
+                 </div>
+                 
+         
+                 <!-- create button and the search in the more option -->
+                 <div id="create_filter_search_option_div">
+                     <div id="space_div"></div>
+                     <div id="create_filter">Create filter</div>
+                     <div><button id="search_option"> Search</button></div>
+                 </div>
+                 </div>
+            <!-- end of the form -->
+
+
+            <div id="spacemore_icon">  
+        
+
+        </div>
+
+            <!-- more option content -->
+            <!-- <div id="content_of_more_option"></div> -->
+
+        </div>
+        
+        <!-- space after the input section -->
+        <div id="input_beside_space"></div>
+
+
+
+             
+
+
+
+
+
+        <!-- in nav bar the four icons settings,support,googlepay,photo  -->
+        <div id="nav_bar_four_profile">
+           <!-- question mark icon in svg-->
+           <div id="support">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(96,99,104)" id="question"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11 15H13V17H11V15ZM13 13.3551V14H11V12.5C11 11.9477 11.4477 11.5 12 11.5C12.8284 11.5 13.5 10.8284 13.5 10C13.5 9.17157 12.8284 8.5 12 8.5C11.2723 8.5 10.6656 9.01823 10.5288 9.70577L8.56731 9.31346C8.88637 7.70919 10.302 6.5 12 6.5C13.933 6.5 15.5 8.067 15.5 10C15.5 11.5855 14.4457 12.9248 13 13.3551Z" id="question"></path></svg>
+           </div> 
+
+
+
+
+           
+               <!--  describing the support/question mark coding question mark -->
+     <div id="describing_question_mark">
+
+        <div id="help_train_upd__padding">
+
+        <!-- help content in the question mark/support -->
+         <div id="help"> 
+            <div class="mainhelp">Help</div>
+        </div>
+         
+        <!-- coding for training word in the qm/support -->
+        <div id="training">
+            <div class="mainTraining">Training</div>
+        </div>
+        
+        <!-- coding for update word in the qm/support -->
+        <div id="update">
+            <div class="mainupdates">updates</div>
+        </div>
+        </div>
+        
+
+        <hr id="hr_question_mark">
+        <!-- fo the feedback to the google form -->
+        <div class="feedback">
+            <div class="send_feedback_div">
+            <div class="main_feedback_sentence">Send feedback to Google</div>
+            </div>       
+         </div>
+
+     </div>
+     <!-- end of the describing the question mark or thesupport -->
+
+
+
+            <!-- -setting icon in svg--> 
+           <div id="settings"> 
+           <svg class="Xy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(96,99,104)" id="settingicon"><path d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z "></path><circle cx="12" cy="12" r="3.5"></circle></svg> 
+           </div>
+            <!-- googleapps -->
+           <div id="googleicons"> 
+                <svg class="gb_h" focusable="false" viewBox="0 0 24 24" fill="rgb(96,99,104)" id="apps"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path><image src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="" height="24" width="24" style="border:none;display:none \9"></image></svg>
+            </div>
+
+
+            <!-- googleapps describing -->
+            <div id="google_describing">
+                <!-- inside of the describimg another box -->
+                <div id="inside_of_the_discribing_gogole_1_box">
+                 
+                <!-- main box for the three boxs -->
+                 <div id="main_box_for_profile_search_map">
+                        <!-- profile -->
+                    <div id="profile_in_google_form">
+                         <div id="profile_g_f">
+                            
+                        <!-- img of profile main box -->
+                            <div id="imgbox_for_profile">
+                                <div id="circle_google_box"></div>
+                            </div>
+
+                            <!-- content main box -->
+                            <div id="content_main_box_profile">
+                            <div id="content_imgbox">Account</div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- search -->
+                    <div id="search_in_google_form">
+
+                         <div id="search_g_f">
+                            <!-- image box for the search -->
+                             <div id="img_main_box_for_search">
+                                  <div id="img_box_for_search"></div>
+                             </div>
+                             <!-- content of search -->
+                             <div id="main_box_for_content_search">
+                                <div id="content_of_search">Search</div>
+                             </div>
+                         </div>
+                    </div>
+
+                        <!--map-->
+                    <div id="map_in_google_form">
+
+                         <div id="map_g_f">
+                            <!-- image box -->
+                            <div id="img_main_box_for_map">
+                                <div id="img_box_for_map"></div>
+                           </div>
+                           <!-- content for map -->
+                           <div id="main_box_for_content_search">
+                              <div id="content_of_search">Maps</div>
+                           </div>
+
+                         </div>
+                    </div>
+                 </div>
+
+                 <!-- main box for the youtube,gemini,news -->
+                <div id="main_box_for_profile_search_map">
+                      <!-- youtube -->
+                    <div id="youtube_in_google_form">
+                        <div id="youtue_g_f">
+                            <!-- image for youtube -->
+                            <div id="img_main_box_for_youtube">
+                                <div id="img_box_for_youtube"></div>
+                           </div>
+                           <!-- content for youtube -->
+                           <div id="main_box_for_content_gfs">
+                            <div id="content_of_g_f">Youtube</div>
+                           </div>
+                        </div>
+                    </div>
+                       <!-- gemini -->
+                    <div id="gemini_in_google_form">
+                        <div id="gemini_g_f">
+                            <!-- image of gemni -->
+                            <div id="img_main_box_for_gemini">
+                                <div id="img_box_for_gemini"></div>
+                             </div>
+                           <!-- content of gemini -->
+                            <div id="main_box_for_content_gfs">
+                                <div id="content_of_g_f">Gemini</div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                        <!-- news -->
+                    <div id="news_in_google_form">
+                        <div id="news_g_f">
+                            <!-- image of news -->
+                            <div id="img_main_box_for_news">
+                                <div id="img_box_for_news"></div>
+                            </div>
+                           <!-- content of news -->
+                             <div id="main_box_for_content_gfs">
+                                <div id="content_of_g_f">News</div>
+                             </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <!-- main box for the gmail,meet,chat -->
+                <div id="main_box_for_profile_search_map">
+                    <!-- gamil -->
+                    <div id="gmail_in_google_form">
+                        <div id="gmail_g_f">
+                            <!-- image of gmail -->
+                            <div id="img_main_box_for_gmail">
+                                <div id="img_box_for_gmail"></div>
+                            </div>
+                           <!-- content of gmail -->
+                            <div id="main_box_for_content_gfs">
+                               <div id="content_of_g_f">Gmail</div>
+                           </div>
+                       
+                        </div>
+                    </div>
+                    <!-- meet -->
+                    <div id="meet_in_google_form">
+                        <div id="meet_g_f">
+                            <!-- image of google meet -->
+                            <div id="img_main_box_for_meet">
+                                <div id="img_box_for_meet"></div>
+                            </div>
+                            <!-- content -->
+                            <div id="main_box_for_content_gfs">
+                               <div id="content_of_g_f">Meet</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- chat -->
+                    <div id="chat_in_google_form">
+                        <div id="chat_g_f">
+                            <!-- image -->
+                            <div id="img_main_box_for_chats">
+                                <div id="img_box_for_chat"></div>
+                            </div>
+                            <!-- content -->
+                            <div id="main_content_of_chat">
+                                <div id="content_chats">Chat</div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- main box for the contacts,drive,calender -->
+                <div id="main_box_for_profile_search_map">
+                    <!-- contacts -->
+                    <div id="contacts_in_google_form">
+                        <div id="contacts_g_f">
+                            <div id="img_main_box_for_contactsss">
+                                <div id="img_box_for_contactsss"></div>
+                            </div>
+                            <div id="main_content_box_contactsss">
+                                <div id="content_contactsss">Contacts</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- drive -->
+                    <div id="drive_in_google_form">
+                        <div id="drive_g_f">
+                            <!-- image of drive -->
+                             <div id="image_main_box_for_drive">
+                                <div id="image_box_for_drive"></div>
+                             </div>
+                             <!-- content of drive -->
+                             <div id="main_content_drive">
+                                <div id="sub_content_drive">Drive</div>
+                             </div>
+                        </div>
+                    </div>
+
+
+                    <!-- calender -->
+                    <div id="calender_in_google_form">
+                        <div id="calender_g_f">
+                            <!-- image for  calender -->
+                            <div id="image_main_box_for_claender">
+                                <div id="sub_image_for_calender"></div>
+                            </div>
+                             <!-- content of calender -->
+                             <div id="main_content_calender">
+                                <div id="sub_content_calender">Calender</div>
+                             </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- main box for the play translate photos-->
+                <div id="main_box_for_profile_search_map">
+                    <!-- play -->
+                    <div id="play_in_google_form">
+                        <div id="play_g_f">
+                            <!-- images of google play -->
+                            <div id="main_image_for_google_play">
+                                <div id="sub_image_for_google_play"></div>
+                            </div>
+                             <!-- content of google play -->
+                             <div id="main_content_play">
+                                <div id="sub_content_play">play</div>
+
+                             </div>
+
+                        </div>
+                    </div>
+                    <!-- translate -->
+                    <div id="translate_in_google_form">
+                        <div id="translate_g_f">
+                            <!-- image of tranlate -->
+                            <div id="image_main_box_for_translate">
+                                <div id="image_sub_box_for_translate"></div>
+                            </div>
+                             <!-- content of translate -->
+                             <div id="main_content_translate">
+                                <div id="sub_content_translate">Translate</div>
+                             </div>
+                        </div>
+                    </div>
+                    <!-- photos -->
+                    <div id="photos_in_google_form">
+                        <div id="phots_g_f">
+                            <!--  imaege of photo -->
+                            <div id="image_main_box_for_google_photos">
+                                <div id="sub_image_box_for_google_photos"></div>
+                            </div>
+                             <!-- content of photo-->
+                             <div id="main_content_photo">
+                                <div id="sub_content_photo">Photos</div>
+                             </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- main box for the myaddcenter,chrome,shopping -->
+                <div id="main_box_for_profile_search_map">
+                        <!-- my_addd -->
+                    <div id="my_add_center_in_google_form">
+                        <div id="my_add_center_g_f">
+                            <!-- images of myaddcenter -->
+                            <div id="image_main_box_for_my_add_center">
+                                <div id="sub_image_box_for_my_add_center"></div>
+                            </div>
+                             <!-- content of myaddcenter -->
+                             <div id="main_content_myadd_center">
+                                <div id="sub_content_my_add_center">My Ad Center..</div>
+                             </div>
+                        </div>
+                    </div>
+                    <!-- chrome -->
+                    <div id="chrome_in_google_form">
+                        <div id="chrome_g_f">
+                            <!-- image of chrome -->
+                             <div id="image_main_box_for_the_chrome">
+                                <div id="sub_image_box_chrome"></div>
+                             </div>
+                             <!-- content of chrome -->
+                             <div id="main_content_chrome">
+                                <div id="sub_content_chrome">Chrome</div>
+                             </div>
+                        </div>
+                    </div>
+                    <!-- shopping -->
+                    <div id="shooping_in_google_form">
+                        <div id="shopping_g_f">
+                            <!-- image of shooping -->
+                            <div id="main_image_box_shooping">
+                                <div id="sub_image_box_shooping"></div>
+
+                            </div>
+                             <!-- content of shooping in he google form -->
+                             <div id="main_content_shooping">
+                                <div id="sub_content_shooping">Shooping</div>
+                             </div>
+
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- second box in the google apps -->
+            <div id="second_box_in_the_describing_google_apps">
+               <a href="https://about.google/products/" id="a_more_from_google"><div id="more_from_google">More from Google</div></a>
+            </div>
+        </div>
+
+            <div id="spaceleft_profile"></div> 
+
+
+           <!-- profile -->
+           <div id="profile"></div> 
+           <div id="spaceright_profile"></div> 
+        </div> 
+    </div>
+    <!-- end of the nav_bar -->
+     
+ <div id="main">
+    <!-- left box -->
+    <div id="leftmain">
+        <div id="space1_upside_compose"></div>
+
+        <!-- compose -->
+        <div id="compose_main">
+
+            <div id="compose">
+                <div><i class="ri-pencil-line" id="compose_icon"></i></div>
+                <div id="content_compose">Compose</div>
+            </div>
+
+            
+
+            <div class="space_box_beside_compose"></div>
+        </div>
+
+        
+   <div id="space2_after_compose"></div>
+        <div id="inbox_star_snooz_sent">
+
+                <!-- inbox -->
+            <div id="inboxmain">
+            <a href="https://mail.google.com/mail/u/0/#inbox" id="inbox_linking"> 
+            <div id="contents_in_leftbox" >
+              <div id="icon1_inbox"><i class="ri-inbox-fill"></i></div>
+              <div id="space_beside_inbox_icon"></div>
+              <div id="inbox_content">Inbox</div>
+              <div id="space_after_content_inbox"></div>
+              <div id="number_inbox">253</div>
+            </div>
+            </a>
+        </div>
+
+             <!-- staredmain -->
+        <div id="starredmain">
+            <div  class="stareedsub">
+              <div id="icon1_stareed"><i class="ri-star-s-line"></i></div>
+              <div id="space_beside_stareed_icon"></div>
+              <div id="stareed_content">Starred</div>
+              <div id="space_after_content_starred"></div>
+              <div id="number_stareed"></div>
+            </div>
+        </div>
+
+
+        <!-- snozeed -->
+         <div id="snozeedmain">
+            <div  class="snoozedsub">
+                <div id="icon1_snozed"><i class="ri-time-line"></i></div>
+                <div id="space_beside_snozed_icon"></div>
+                <div id="snozed_content">Snoozed</div>
+                <div id="space_after_content_snozed"></div>
+                <div id="number_snozed"></div>
+            </div>
+        </div>
+
+
+         <!-- sent -->
+        <div id="sent_main">
+            <div  class="sentsub">
+                <div id="icon1_sent"><i class="ri-send-plane-2-line"></i></div>
+                <div id="space_beside_sent_icon"></div>
+                <div id="sent_content">Sent</div>
+                <div id="space_after_content_sent"></div>
+                <div id="number_sent"></div>
+            </div>
+
+        </div>
+
+        <!-- draft --> 
+        <div id="draft_main">
+            <div  class="draftsub">
+                <div id="icon1_draft"><i class="ri-file-3-line"></i></div>
+                <div id="space_beside_draft_icon"></div>
+                <div id="draft_content" >Drafts</div>
+                <div id="space_after_content_draft"></div>
+                <div id="number_draft"></div>
+            </div>
+            
+        </div> 
+
+        <div id="more_main">
+            <div  class="moresub">
+                <div id="icon1_more"><i class="ri-arrow-down-s-line"></i></div>
+                <div id="space_beside_more_icon"></div>
+                <div id="more_content" >More</div>
+                <div id="space_after_content_more"></div>
+                <div id="number_more"></div>
+            </div>
+        </div>
+
+        
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div id="middle_contentmain">
+        <!-- first box in the middle content checkbox,selecticons,refres,more,newer,older input tools on and off,selct input -->
+        <div id="first_box_free_area_with_icons">
+            <!-- checkbox and selecticon -->
+            <div id="middle_checkbox_and_selectionicon">
+
+                <div id="checkbox_m_m">
+                    <!-- <div id="outerbox"> -->
+                    <input type="checkbox" id="chekk_boxx_in_mm">
+                    <!-- </div> -->
+                </div>
+                <div id="selecticon_m_m">
+                    <i class="ri-arrow-down-s-fill" id="icon_select_arrow"></i>
+                </div>
+
+            </div>
+
+
+            <!-- archevi/refresh  ,more/reportspam -->
+             <div id="archiev_reportspam_or_refer_moreoption">
+                <!-- main1 box of archiev or refresh -->
+                <div id="archievv_box_or_refresh_box">
+
+                    <!-- small box of archiev -->
+                   <div id="archiv_icons_box">
+                     <i class="ri-inbox-archive-line" id="icon_archiev"></i>
+                   </div>
+                  
+                   <!-- small box of refresh -->
+                   <div id="refresh_icons_box">
+                     <i class="ri-reset-right-line" id="icon_refresh"></i>
+                   </div>
+
+                 </div>
+
+                      <!-- report spam  when clicked/// more option  when unclicked -->
+                <div id="reports_spam_box_or_more_box">
+                        <div id="reportspam_smallbox">
+                            <i class="ri-spam-2-line"></i>
+                        </div>
+                        
+                        <div id="moreicon_smallboox">
+                            <i class="ri-more-2-fill"></i>
+                        </div>
+      
+
+                </div>
+
+
+             </div>
+
+
+                <!-- deleeat when clicked -->
+            <div id="deleat_box_box">
+                <div id="delate_main_box_large_one">
+                    
+                    <div id="deleat_smallboox">
+                        <i class="ri-delete-bin-line"></i>
+                    </div>
+  
+
+                </div>
+            </div>
+
+
+         <hr id="hr_in_clicked">
+
+              <div id="mark_as_read">
+                 <div id="mark_as_read_main_box_large-one">
+                
+                     <div id="mark_as_read_smallboox">
+                        <i class="ri-mail-open-line"></i>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div id="move_to_and_more_option">
+                    <div id="move_to_main_box_large-one">
+               
+                      <div id="mark_as_read_smallboox">
+                        <i class="ri-file-transfer-line"></i>
+                      </div>
+
+                    </div>
+
+                    <div id="more_op_when_clicked_main_box_large-one">
+               
+                       <div id="when_click_more_op_smallboox">
+                        <i class="ri-more-2-fill"></i>
+                       </div>
+
+                    </div>
+
+                </div>
+                <!-- end of the move to and more option when we click on the checkbox it will be visible -->
+               
+
+                <!-- space beside the icons -->
+                 <div id="space_beside_the_icons_in_mm"></div>
+
+                <div id="newest_and_oldest">1-50 of 2,722</div>
+
+                <!-- iconsof newwer and older it will look like arrow -->
+                <div id="newer">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <div id="older">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+
+
+                <!-- input tool on and off -->
+                <div id="input_tools_and_icon">
+
+                    <div id="input_tool">
+                        <input type="checkbox" id="chekk_boxx_in_mm">
+                    </div>
+                    <div id="icon_in_input_toool_on_and-off">
+                        <i class="ri-arrow-down-s-fill" id="icon_select_arrow"></i>
+                    </div>
+    
+                </div>
+
+
+
+          </div>
+          <!-- end of the first box in the main box -->
+
+
+         <!-- <div id="scrooldiv_main"> -->
+          <!-- second box ofthe middle content (but it should be in the display:none) when i click the checkbox in te first line it should be apper -->
+         <div id="second_hidden_div">
+            <div id="first_box_of_the_second_box"></div>
+            <div id="all_conversationcontent">All 50 conversations on this page are selected.</div>
+            <div id="select_all_or_dis_select"> Select all 2,772 conversations in Primary</div>
+         </div>
+
+         <!-- end of second box-->
+         
+          <!--  primary,promotions,social-->
+            <div id="primary_promotions_social">
+                <!-- primary -->
+                <div id="primary">
+
+                    <!-- icon in the primary -->
+                   <div id="inobx_icon_in_primary">
+                      <i class="ri-inbox-line"></i>
+                    </div>
+
+                    <!-- content of primary -->
+                    <div id="content_of_primary">Primary</div>
+                </div>
+
+
+                <!-- promotions -->
+                <div id="promotions">
+
+                  <!-- icon in the promotions -->
+                   <div id="inobx_icon_in_promotions">
+                       <i class="ri-inbox-line"></i>
+                   </div>
+
+                   <!-- content of promotions -->
+                   <div id="content_of_promotion">Promotions</div>
+                </div>
+                
+                
+                <!-- social -->
+                <div id="social">
+                     <!-- icon in the primary -->
+                   <div id="inobx_icon_in_social">
+                    <i class="ri-group-line"></i>
+                   </div>
+
+                   <!-- content of primary -->
+                   <div id="content_of_social">Social</div>             
+                </div>
+
+
+
+            </div>
+          <!-- end of the social promotions and thrn social -->
+   
+            <!-- mail 1st box   (linkdin alerts)-->
+             <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" class="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your  opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+            <!-- end of the 1st box -->
+
+
+
+
+             <!-- mail 2nd box   (snap chat)-->
+             <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" class="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_snapchat">Team Snapchat</div>
+                  <div id="sub_topic_of_the_snapchat">Mahesh, just added you as a friend - </div>
+                  <div id="description_of_the_linkdin">Raj added you as a friend!</div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+
+             <!-- end of the 2nd box -->
+
+
+
+        <!-- 3rd box quora -->
+             <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" class="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+              <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_quora">Quora Digest</div>
+                  <div id="sub_topic_of_the_Quora">How was your JEE Advanced 2024 result?</div>
+                  <div id="description_of_the_linkdin">-i took long to talk about this ...here I am accepting the reality that i am not qualified for free advance</div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+        <!-- end of 3rd box quora -->
+
+
+         <!-- 4th box of canva -->
+             <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" class="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_canva">Canva</div>
+                  <div id="sub_topic_of_the_canva">your canva code is 269000 and 30000</div>
+                  <div id="description_of_the_linkdin">  Enter 269000 in  the next 10 mins to continue with Canva </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+             <!-- end of the 4th box-->
+
+
+
+          <!-- 5th box  goggle-->
+
+             <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" class="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+                  <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_googleee">Google</div>
+                  <div id="sub_topic_of_the_googlee">Your gmail is out of storage-</div>
+                  <div id="description_of_the_linkdin">Your password was changed maheshpujari@gmail.com Thee passsword for your Google account maheshpujari@gmail.com was changed. if you should recover your account </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+           <!-- end of the fifth -->
+
+
+          <!-- 6th  box linkdin-->
+             <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" id="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+             <!-- end of the figma -->
+
+   
+
+
+          <!-- 7th snap chat -->
+
+             <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" class="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Team Snapchat</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh, just added you as a friend  ---</div>
+                  <div id="description_of_the_linkdin"> Reshma added you as a friend </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+             </div>
+
+          <!-- end of the 7th box -->
+
+           <!-- 8th box  desgn evo-->
+               <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" id="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+                 <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+                 <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alert</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                 <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+              <!-- end of snap--8th -->
+
+            
+
+            <!-- 9th box  -->
+            <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" class="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+              <!-- end of snap--9th -->
+
+
+
+
+            
+            <!-- 10th box  -->
+            <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" id="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+              <!-- end of snap--10th -->
+
+
+
+             <!-- 11th box  -->
+            <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" id="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+              <!-- end of snap--11th -->
+
+
+             <!-- 12th box  -->
+            <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" id="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+              <!-- end of snap--12th -->
+
+
+             <!-- 13th box  -->
+            <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" id="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+              <!-- end of snap--13th -->
+            
+
+             <!-- 14th box  -->
+            <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" id="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+              <!-- end of snap--14th -->
+
+
+
+             <!-- 15th box  -->
+            <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" id="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+              <!-- end of snap--15th -->
+
+
+             <!-- 16th box  -->
+            <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" id="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+              <!-- end of snap--16th -->
+
+             <!-- 17th box  -->
+            <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" id="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+              <!-- end of snap--17th -->
+
+               <!-- 18th box  -->
+            <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" id="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+              <!-- end of snap--18th -->
+
+
+        <!-- 19th box  -->
+            <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" id="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+            <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+         <!-- end of snap--19th -->
+
+
+         <!-- 20th box  -->
+            <div id="first_box_the_linkdin">
+
+                <!-- main check box and the star box -->
+                <div id="main_box_checkbox_first_box_linkdin">
+                    <div id="checkboxxxx">
+                        <input type="checkbox" id="lknckbz">
+                    </div>    
+                    <div id="star_linkdin"><i class="ri-star-line"></i></div>     
+                </div>
+                 <!-- end of the checkbox and  the star the first box of the linkdin -->
+
+               <!-- topic sub topic -->
+                  <div id="topic_of_the_linkdin">Linkedlin Job Alerts</div>
+                  <div id="sub_topic_of_the_linkdin">Mahesh your opportunites for "student"-</div>
+                  <div id="description_of_the_linkdin">  Job Description :About us:Leo Global Over Seas is a premier student Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor corporis? Maiores atque natus quas, voluptatem molestias eaque asperiores nemo eveniet, ad dignissimos officiis error ab itaque est repellendus a? </div>
+                <!-- end of the topic subtopic  description -->
+
+
+                  <!-- icons -->
+                  <div id="main_box_archiev_deleat_mark_mark_in_linkdin">
+                  <div id="archiev1_bozx_for_linkdin_first_box"><i class="ri-inbox-archive-line"></i></div>
+                  <div id="deledt1_bozx_for_linkdin_first_box"><i class="ri-delete-bin-6-line"></i></div>
+
+                  <!-- mark as read -->
+                  <div id="markas__bozx_for_linkdin_first_box">
+                      <i class="ri-mail-open-line"></i>
+                  </div>
+
+                  <div id="snozz_bozx_for_linkdin_first_box"><i class="ri-time-line"></i></div>
+                  </div>
+
+
+                  <!-- timing is visible but when we hover it not be visible -->
+                    <div id="time_in_linkdin">10:24pm</div>
+
+
+             </div>
+          <!-- end of snap--20th -->
+
+
+       <!-- last box 21 box storage box -->
+        <div id="storage_box">
+
+            <!-- range+ total percentage of gb----in the last storage box -->
+             <div id="range_box">
+
+                <!-- range  symbol main box-->
+                 <div id="range_symbol_box">
+                    <div id="range_symb">
+                         <input type="range" id="input_range_in_the_storage_box" min="0" max="100" value="97">
+
+                    </div>
+                    <div id="free_space_beside_range"></div>
+                 </div>
+                <!-- end of range symbol main box -->
+
+                <!-- pecentage gb box main -->
+                 <div id="perentage_main_box">
+                    <div id="percentage_box">14.78 GB of 15 GB (98%) used</div>
+                    <div id="icon_box_in_the_percentage_box_main">
+                        <i class="ri-share-box-line" id="icon_pp"></i>
+                    </div>
+                    <div id="space_beside_the_icon_in_thepercentage_box"></div>
+
+                 </div>
+
+                <!-- end of the percentage gb box main -->
+
+
+             </div>
+            <!-- end of range box+ total pecentage of gb- In the last storage box -->
+
+            <!-- back_of_theterms_privacy_box -->
+            <div id="back_of-the_terms_privicy_box"></div>
+            <!-- end of this terms pivicy box -->
+
+            <!-- terms-privacy.program policies -->
+            <div id="terms_privacy">
+               <a href="https://policies.google.com/terms?hl=en" id="term_in_storage">Terms •</a>
+              <a href="https://policies.google.com/privacy?hl=en" id="privacy_in_storage">Privacy  •</a>
+               <a href="https://www.google.com/gmail/about/policy/" id="program_policy_in_storage">Program Policies </a>
+
+            </div>
+            <!--  end of the terms-privacy.program policies -->
+            
+            <!-- fron_box_of_the_terms_privicybox -->
+             <div id="front_of_terms_privicy_box"></div>
+            <!-- end of this front box -->
+
+            
+
+            
+            <!-- last account activity -->
+            
+             <div id="last_account_activity">
+                <!-- last account activity -->
+                <div id="main_div_of_last_account_activity">
+                <div id="last_acc_acti_two_hours_ago">Last account activity:2 hours ago</div>
+                </div>
+
+                <!-- details of last account activity -->
+                 <div id="details_of_last_account_activity">
+                    <div id="details">Details</div>
+                 </div>
+
+             </div>
+             <!-- end of the last account account activity -->
+
+        </div>
+       <!-- end of last box  --21 box -storage box -->
+
+
+
+
+
+        
+        
+
+
+               
+                
+
+
+    </div>
+    <!-- end of the middle main -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- right main holds the calender, task, contacts,note -->
+    <div id="rightmain">
+        <div id="right_icon_box">
+
+            <!-- calender -->
+            <div id="calender">
+                <div id="calenderimgbox">
+                    <div id="calenderimg"></div>
+                </div>
+            </div>
+
+
+            <!-- note -->
+            <div id="note">
+                <div id="noteimgbox">
+                    <div id="noteimg"></div>
+
+                </div>
+            </div>
+
+            <!-- task -->
+            <div id="task">
+                <div id="taskimgbox">
+                    <div id="taskimg"></div>
+                </div>
+            </div>
+
+            <!-- contacts -->
+            <div id="contacts">
+                <div id="contactsimgbox">
+                    <div id="contactimg"></div>
+
+                </div>
+            </div>
+    
+            <!-- minus -->
+            <div id="minu">
+                <div id="minusiconbox"><hr id="minusicon"></div>
+
+            </div>
+
+            <!-- plus -->
+            <div id="plus">
+                <div id="plusiconbox"><i class="ri-add-line" id="plusicon"></i></div>
+            </div>
+        
+        </div>
+
+    </div>
+
+</div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
